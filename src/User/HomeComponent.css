@@ -1,0 +1,45 @@
+.programs-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #e0f7fa;
+}
+
+.program-card {
+  text-align: center;
+  border-left: 2px solid #00bcd4;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.program-card img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.program-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.program-card p {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .programs-section {
+    grid-template-columns: 1fr;
+  }
+}
