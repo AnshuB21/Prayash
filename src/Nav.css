@@ -18,7 +18,7 @@
   align-items: center;
   color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .nav-list {
@@ -35,13 +35,16 @@
   text-decoration: none;
   font-size: 1.2rem;
 }
+.nav-list li a:hover {
+  color: #f39c12;
+}
 
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
   background: none;
   border: none;
-  color: white;
+  color: rgb(253, 247, 244);
   cursor: pointer;
 }
 

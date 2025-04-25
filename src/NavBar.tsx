@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./Nav.css";
+import Footer from "./Footer";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,13 +31,14 @@ function NavBar() {
           <li>
             <Link to="/projects">Projects</Link>
           </li>
-        </ul>
 
-        <Link to="/adminpanel">
-          <button className="admin-btn">Admin Login</button>
-        </Link>
+          <Link to="/adminpanel">
+            <button className="admin-btn">Admin Login</button>
+          </Link>
+        </ul>
       </nav>
       <Outlet />
+      <Footer />
     </>
   );
 }

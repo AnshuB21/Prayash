@@ -7,6 +7,7 @@ import Members from "./User/Members";
 import Error from "./Error";
 import ReactDOM from "react-dom/client";
 import { Routes, Route } from "react-router-dom";
+import ProjectComponent from "./User/ProjectComponent";
 function App() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="members" element={<Members />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="projects/:id" element={<ProjectComponent />} />
         <Route path="adminpanel" element={<AdminDashboard />} />
         <Route path="*" element={<Error />} />
       </Route>

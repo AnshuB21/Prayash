@@ -86,8 +86,11 @@ function adminDashboard(): JSX.Element {
         </div>
         <div className="mb-1">
           <label htmlFor="description">Description</label>
-          <input
-            type="text"
+          <textarea
+            name="description"
+            rows={4}
+            cols={50}
+            placeholder="Enter your description here..."
             id="description"
             value={postProject.description}
             onChange={(e) => {

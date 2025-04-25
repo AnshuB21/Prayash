@@ -33,7 +33,7 @@
 }
 
 .Slogan h1 {
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 3.5vw, 2rem);
   font-weight: bold;
   margin-top: 1.5rem;
   color: #212121;
@@ -53,14 +53,14 @@
 }
 
 .Slogan2 h1 {
-  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
   color: #1976d2;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .Slogan2 p {
-  font-size: 1.05rem;
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
   line-height: 1.7;
   color: #424242;
   text-align: justify;
