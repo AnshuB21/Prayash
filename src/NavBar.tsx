@@ -32,7 +32,7 @@ function NavBar() {
             <Link to="/projects">Projects</Link>
           </li>
 
-          <Link to="/adminpanel">
+          <Link to="/login">
             <button className="admin-btn">Admin Login</button>
           </Link>
         </ul>

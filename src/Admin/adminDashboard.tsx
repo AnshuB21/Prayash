@@ -1,6 +1,8 @@
 import { JSX } from "react";
 import { useState } from "react";
 import supabase from "../Client";
+import "./Admin.css";
+import { Link } from "react-router-dom";
 
 function adminDashboard(): JSX.Element {
   const postType = {
@@ -135,6 +137,9 @@ function adminDashboard(): JSX.Element {
         </div>
         <button type="submit">Submit</button>
       </form>
+      <button>
+        <Link to="/login">LogOUT</Link>
+      </button>
     </div>
   );
 }
